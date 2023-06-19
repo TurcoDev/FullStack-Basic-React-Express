@@ -4,21 +4,25 @@ export const users: User[] = [
   {
     id: 0,
     name: "Pedro",
-    age: 1500,
+    imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
+    age: 15,
   },
   {
     id: 1,
-    name: "Paco",
+    name: "Florencia",
+    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
     age: 89,
   },
   {
     id: 2,
     name: "Paco",
-    age: 89,
+    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+    age: 35,
   },
   {
     id: 3,
     name: "Mauricio",
+    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
     age: 29,
   }
 ];
