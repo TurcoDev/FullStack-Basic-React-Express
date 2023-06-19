@@ -1,0 +1,14 @@
+img{
+  width: 90px;
+  height: 90px;
+}
+
+.userCard {
+  color: #fff;
+  /* background-color: #222731; */
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
