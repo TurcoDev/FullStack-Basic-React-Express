@@ -1,9 +1,6 @@
 ### Basic App FullStack
-# Tecnogogis used
+# Used technology
  - React
  - NodeJs
  - Express
  - TypeScript
-
-
-
