@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from 'express';
-import { users } from "./db/user.data";
+import { users, users2 } from "./db/user.data";
+import {User, UserResponse} from './models/user.interface';
 
 
 const app: Express = express();
@@ -10,6 +11,13 @@ app.get("/api", (req: Request, res: Response): void => {
 
 app.get("/api/users", (req: Request, res: Response): void => {
   res.send(users);
+});
+
+app.get("/api/users2", (req: Request, res: Response): void => {
+  function func1(users: UserResponse[]) {
+    res.send(users);
+  }
+  users2(func1);
 });
 
 const port = 3000;

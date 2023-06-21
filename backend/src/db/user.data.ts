@@ -1,4 +1,4 @@
-import User from '../models/user.interface';
+import {User, UserResponse} from '../models/user.interface';
 
 export const users: User[] = [
   {
@@ -26,5 +26,14 @@ export const users: User[] = [
     age: 29,
   }
 ];
+
+export const users2 = function (callback: any){
+  fetch('https://reqres.in/api/users')
+  .then(response => response.json())
+  .then(usersData => {
+    // console.log(data);
+    callback(usersData.data);
+  });
+}
 
 // export default users;
